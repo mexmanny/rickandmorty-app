@@ -5,6 +5,7 @@ import { fetchCharacterInfo } from '@/app/handlers';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 
 export const GET = async (request: NextRequest, { params }: Params) => {
-  const characterInfo = await fetchCharacterInfo(null);
+  const characterId = params['characterId'];
+  const characterInfo = await fetchCharacterInfo(characterId);
   return NextResponse.json(characterInfo);
 };

@@ -5,13 +5,13 @@ export type CharacterDetailProps = {
 };
 
 export type CharacterDetailsData = {
-  info: {
+  info?: {
     count: number;
     pages: number;
     next: string;
     prev: string;
   };
-  results: CharacterDetails[];
+  results?: CharacterDetails[];
 };
 
 export type CharacterDetails = {
@@ -37,4 +37,25 @@ export type Origin = {
 export type Location = {
   name: string;
   url: string;
+};
+
+export type EpisodeDetailsResponse = {
+  info: {
+    count: number;
+    pages: number;
+    next: string;
+    prev: string;
+  };
+
+  results: EpisodeDetails[];
+};
+
+export type EpisodeDetails = {
+  id: string;
+  namw: string;
+  air_date: string;
+  episode: string;
+  characters: string[];
+  url: string;
+  created: string;
 };

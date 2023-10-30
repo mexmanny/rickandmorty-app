@@ -7,12 +7,14 @@ type Props = {};
 const CharacterCard = ({ id, name, imageUrl }: CharacterDetailProps) => {
   return (
     <div key={id}>
-      <h1 className="text-center text-2xl m-5">{name}</h1>
+      <h1 className="text-sm lg:text-lg my-5">{name}</h1>
+
       <Image
         src={imageUrl}
         alt="Image of Character"
-        width={500}
-        height={500}
+        width={200}
+        height={200}
+        layout="responsive"
       ></Image>
     </div>
   );
