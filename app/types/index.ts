@@ -40,14 +40,14 @@ export type Location = {
 };
 
 export type EpisodeDetailsResponse = {
-  info: {
+  info?: {
     count: number;
     pages: number;
     next: string;
     prev: string;
   };
 
-  results: EpisodeDetails[];
+  results?: EpisodeDetails[];
 };
 
 export type EpisodeDetails = {

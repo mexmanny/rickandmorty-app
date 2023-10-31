@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function Home() {
   const [characterUrls, setCharacterUrls] = useState<string[]>([]);
   return (
-    <main className="flex w-screen h-screen overflow-hidden">
+    <main className="flex w-screen h-screen overflow-y-auto">
       <div className="w-[300px] p-8 h-screen overflow-y-auto">
         <EpisodeList setCharacterUrls={setCharacterUrls} />
       </div>

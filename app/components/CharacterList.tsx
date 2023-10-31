@@ -40,7 +40,7 @@ export const CharacterList = ({
           [] as CharacterDetails[]
         );
 
-      setCharacterData({ results: combinedData.reverse() });
+      setCharacterData({ results: combinedData });
     };
 
     if (characterUrls.length > 0) {
